@@ -140,10 +140,14 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
-
+    font-size: 16px;
 }
 
-.header-soc-link:hover,
+.header-soc-link:hover {
+    color: var(--iris-color);
+}
+
+.header-soc-link:active,
 .header-soc-link:focus {
     color: var(--iris-color);
 }
