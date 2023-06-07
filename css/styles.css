@@ -19,10 +19,24 @@ body {
     color: var(--text-color);
 }
 
-a {text-decoration: none;}
+p, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
 
 ul {
     list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.img {
+    display: block;
 }
 
 .link {
@@ -30,6 +44,33 @@ ul {
 }
 .list {
     list-style: none;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--color-cornflower)
+}
+
+.header-navigation {
+    display: flex;
+    flex-grow: 1;
+}
+
+.header-menu {
+    display: flex;
+    margin-left: 76px;
+    gap: 40px;
 }
 
 .header-logo { 
@@ -66,6 +107,11 @@ ul {
     font-style: normal;
 }
 
+.header-soc {
+    display: flex;
+    gap: 40px;
+}
+
 .header-menu-link:hover,
 .header-menu-link:focus {color: var(--iris-color);}
 
@@ -85,29 +131,41 @@ ul {
 /*************     MAIN     **************/
 
 /************* SECTION HERO **************/
-.hero{
+.hero {
     background: var(--title-color);
-    text-align: center;
+    height: 600px;
+    padding: 188px 0;
 }
 
-.hero-main{
-    font-weight: 700;
+.hero-main {
+    font-weight: 700px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: var(--main-color);
     text-align: center;
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
-.hero-bttn{
+.hero-bttn {
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--main-color);
     cursor: pointer;
     background-color: var(--link-color);
+    border-radius: 4px;
+    border: none;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-bttn:hover,
@@ -117,12 +175,23 @@ ul {
 
 /************* SECTION FEATURE **************/
 
+.main-feature {
+    display: flex;
+    gap: 24px;
+    margin-top: 120px;
+}
+
+.main-feature-list {
+    width: calc((100%-72px) / 4);
+}
+
 .main-feature-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    margin-bottom: 8px;
 }
 .main-feature-paragraf{
     font-size: 16px;
@@ -133,14 +202,26 @@ ul {
 
 /************* SECTION SERVICES **************/
 
-.services-title{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        color: var(--title-color);
-        text-align: center;
-        text-transform: capitalize;
+.services-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 120px;
+}
+
+.services-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+
+.services-list-images {
+    width: calc((100%-48px) / 3);
 }
 
 /************* SECTION TEAM **************/
@@ -149,26 +230,40 @@ ul {
     background-color: var(--color-white);
     text-align: center;
     text-transform: capitalize;
+    height: 732px;
+    padding: 120px 0;
 }
 
 .team-list-content{
     background-color: var(--main-color);
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 72px) / 4);
 }
 
 .team-title{
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
-        letter-spacing: 0.02em;
-        color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.container-team {
+    margin: 32px 16px;
 }
 
 .team-title-name{
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: var(--title-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
 }
 
 .team-paragraf{
@@ -193,33 +288,62 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-white);
+    max-width: 264px;
 }
 
+.studio {
+    padding: 100px 0;
+    padding-bottom: 16px;
+    display: inline-block;
+}
+
+.container-footer {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 312px;
+}
 
 /*_____________________________PORTFOLIO______________________________*/
 
 /*************     MAIN     **************/
 
 /************* SECTION navigation  **************/
+.navigation-main {
+    display: flex;
+    margin-top: 96px;
+    justify-content: center;
+}
 
 .navigation-btn {
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        color: var(--link-color);
-        background-color: var(--color-white);
-        cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--link-color);
+    background-color: var(--color-white);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 24px;
+    border: none;
+    display: block;
+    border: 1px solid var(--color-cornflower);
 }
+
 
 .navigation-btn:hover,
 .navigation-btn:focus {
-    color: var(--main-color);
-    background-color: var(--iris-color);
+color: var(--main-color);
+background-color: var(--iris-color);
+border: 1px solid transparent;
 }
 
 /************* SECTION content  **************/
+
+.content-list {
+    width: calc((100% - 48px) / 3);
+}
 
 .content-img {
     text-decoration: none;
@@ -238,3 +362,22 @@ ul {
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
+
+.content-main {
+    display: flex;
+    gap: 48px 24px;
+    margin-top: 72px;
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+}
+
+.container-content {
+    border-right: 1px solid var(--color-cornflower);
+    border-bottom: 1px solid var(--color-cornflower);
+    border-left: 1px solid var(--color-cornflower);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+   
