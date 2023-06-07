@@ -308,7 +308,7 @@ img {
 
 .footer-cover{
     background-color: var(--title-color);
-    
+    padding: 100px 0;
 }
 
 .span_studio_f {
@@ -333,7 +333,6 @@ img {
     padding: 0 15px;
     margin: 0 auto;
     height: 312px;
-    padding: 100px 0;
 }
 
 /*_____________________________PORTFOLIO______________________________*/
@@ -384,10 +383,6 @@ border: 1px solid transparent;
     width: calc((100% - 48px) / 3);
 }
 
-.content-img {
-    text-decoration: none;
-}
-
 .content-text {
     font-weight: 500;
     font-size: 20px;
@@ -412,10 +407,10 @@ border: 1px solid transparent;
 }
 
 .container-content {
-    border-right: 1px solid var(--color-cornflower);
-    border-bottom: 1px solid var(--color-cornflower);
-    border-left: 1px solid var(--color-cornflower);
+    border: 1px solid var(--color-cornflower);
     padding: 32px 16px;
+    border-top: none;
+    width: 360px;
 }
 
    
