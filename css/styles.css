@@ -61,17 +61,20 @@ img {
 
 .container {
     width: 1158px;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 .header-container {
     display: flex;
     height: 72px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header {
     border-bottom: 1px solid var(--color-cornflower);
+    padding: 24px 0;
 }
 
 .header-navigation {
@@ -84,7 +87,6 @@ img {
     display: flex;
     margin-left: 76px;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-logo { 
