@@ -307,7 +307,6 @@ img {
 .footer-cover{
     background-color: var(--title-color);
     padding: 100px 0;
-    height: 312px;
 }
 
 .span_studio_f {
@@ -315,7 +314,6 @@ img {
 }
 
 .footer-paragraf {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-white);
@@ -327,11 +325,6 @@ img {
     margin-bottom: 16px;
 }
 
-.container-footer {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
 
 /*_____________________________PORTFOLIO______________________________*/
 
