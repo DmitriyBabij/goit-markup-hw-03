@@ -67,12 +67,13 @@ img {
 
 .header-container {
     display: flex;
+    height: 72px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--color-cornflower)
+    border-bottom: 1px solid var(--color-cornflower);
 }
 
 .header-navigation {
@@ -202,7 +203,6 @@ img {
 .main-feature {
     display: flex;
     gap: 24px;
-    margin-top: 120px;
 }
 
 .main-feature-list {
@@ -238,7 +238,6 @@ img {
     color: var(--title-color);
     text-align: center;
     text-transform: capitalize;
-    margin-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -246,7 +245,6 @@ img {
     display: flex;
     gap: 24px;
     margin-top: 72px;
-    margin-bottom: 120px;
 }
 
 .services-list-images {
@@ -309,6 +307,7 @@ img {
 .footer-cover{
     background-color: var(--title-color);
     padding: 100px 0;
+    height: 312px;
 }
 
 .span_studio_f {
@@ -332,7 +331,6 @@ img {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    height: 312px;
 }
 
 /*_____________________________PORTFOLIO______________________________*/
@@ -346,7 +344,6 @@ img {
 }
 .navigation-main {
     display: flex;
-    margin-top: 96px;
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
