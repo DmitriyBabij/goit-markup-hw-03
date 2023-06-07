@@ -64,13 +64,15 @@ ul {
 
 .header-navigation {
     display: flex;
-    flex-grow: 1;
+    align-items: center;
+    margin-right: auto;
 }
 
 .header-menu {
     display: flex;
     margin-left: 76px;
     gap: 40px;
+    padding: 24px 0 24px
 }
 
 .header-logo { 
@@ -81,6 +83,7 @@ ul {
     letter-spacing: 0.03em;
     color: var(--link-color);
     text-transform: uppercase;
+    align-items: center;
 }
 
 .span_studio {
@@ -101,10 +104,15 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    padding: 24px 0;
+    display: block;
 }
 
 .header-address {
     font-style: normal;
+    display: flex;
+    gap: 40px;
+    align-items: center;
 }
 
 .header-soc {
@@ -116,7 +124,6 @@ ul {
 .header-menu-link:focus {color: var(--iris-color);}
 
 .header-soc-link {
-    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
