@@ -35,7 +35,7 @@ ul {
     padding-left: 0;
 }
 
-.img {
+img {
     display: block;
 }
 
@@ -44,6 +44,19 @@ ul {
 }
 .list {
     list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -84,6 +97,7 @@ ul {
     color: var(--link-color);
     text-transform: uppercase;
     align-items: center;
+    margin-right: 76px
 }
 
 .span_studio {
@@ -181,6 +195,9 @@ ul {
 }
 
 /************* SECTION FEATURE **************/
+.feature {
+    padding: 120px 0;
+}
 
 .main-feature {
     display: flex;
@@ -209,6 +226,10 @@ ul {
 
 /************* SECTION SERVICES **************/
 
+.services {
+    padding-bottom: 120px;
+}
+
 .services-title {
     font-weight: 700;
     font-size: 36px;
@@ -218,6 +239,7 @@ ul {
     text-align: center;
     text-transform: capitalize;
     margin-top: 120px;
+    margin-bottom: 72px;
 }
 
 .services-list {
@@ -239,6 +261,7 @@ ul {
     text-transform: capitalize;
     height: 732px;
     padding: 120px 0;
+    margin-bottom: 72px;
 }
 
 .team-list-content{
@@ -262,7 +285,7 @@ ul {
 }
 
 .container-team {
-    margin: 32px 16px;
+    padding: 32px 16px
 }
 
 .team-title-name{
@@ -271,6 +294,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    margin-bottom: 8px
 }
 
 .team-paragraf{
@@ -284,6 +308,7 @@ ul {
 
 .footer-cover{
     background-color: var(--title-color);
+    
 }
 
 .span_studio_f {
@@ -299,9 +324,8 @@ ul {
 }
 
 .studio {
-    padding: 100px 0;
-    padding-bottom: 16px;
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .container-footer {
@@ -309,6 +333,7 @@ ul {
     padding: 0 15px;
     margin: 0 auto;
     height: 312px;
+    padding: 100px 0
 }
 
 /*_____________________________PORTFOLIO______________________________*/
@@ -316,10 +341,16 @@ ul {
 /*************     MAIN     **************/
 
 /************* SECTION navigation  **************/
+
+.portfolio-container {
+    padding: 96px 0 120px 0;
+}
 .navigation-main {
     display: flex;
     margin-top: 96px;
     justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .navigation-btn {
@@ -336,6 +367,7 @@ ul {
     border: none;
     display: block;
     border: 1px solid var(--color-cornflower);
+    padding: 12px 24px;
 }
 
 
@@ -362,6 +394,7 @@ border: 1px solid transparent;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    margin-bottom: 8px;
 }
 .content-paragraf {
     font-size: 16px;
@@ -382,9 +415,7 @@ border: 1px solid transparent;
     border-right: 1px solid var(--color-cornflower);
     border-bottom: 1px solid var(--color-cornflower);
     border-left: 1px solid var(--color-cornflower);
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 
    
