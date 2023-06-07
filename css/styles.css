@@ -86,6 +86,7 @@ img {
     display: flex;
     margin-left: 76px;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-logo { 
@@ -97,7 +98,7 @@ img {
     color: var(--link-color);
     text-transform: uppercase;
     align-items: center;
-    margin-right: 76px
+    margin-right: 76px;
 }
 
 .span_studio {
@@ -117,7 +118,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-color);
-    padding: 24px 0;
     display: block;
 }
 
